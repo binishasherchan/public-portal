@@ -54,7 +54,7 @@ function Section3() {
                        {projects.map((projects, index) =>(
                               <div className="md:flex md:mb-4 sm:mb-4 items-center justify-between project-card rounded " key={index}>
                                   <img src= {projects.image} alt=""  className="company-logo"/>
-                                  <h2 className="text-[25px]  font-[600] mb-4 ms-3">{projects.name}</h2>
+                                  <h2 className="text-[22px]  font-[600] mb-4 ms-3">{projects.name}</h2>
                               </div>
                         ))}  
                      </div>  

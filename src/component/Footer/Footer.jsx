@@ -9,9 +9,9 @@ function Footer() {
     </span>
     <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
         <li> <a href="#about" class="mr-4 text-sm text-[#000] hover:underline md:mr-6 dark:text-[#000] font-[600]">About</a></li>
-        <li> <a href="#" class="mr-4 text-sm text-[#000] hover:underline md:mr-6 dark:text-[#000] font-[600]">Projects </a></li>
-        <li> <a href="#" class="mr-4 text-sm text-[#000] hover:underline md:mr-6 dark:text-[#000] font-[600]">Investments</a></li>
-        <li> <a href="#" class="text-sm text-[#000] hover:underline dark:text-[#000] font-[600]">Contact</a></li>
+        <li> <a href="#projects" class="mr-4 text-sm text-[#000] hover:underline md:mr-6 dark:text-[#000] font-[600]">Projects </a></li>
+        <li> <a href="#investment-portfolio" class="mr-4 text-sm text-[#000] hover:underline md:mr-6 dark:text-[#000] font-[600]">Investments</a></li>
+        <li> <a href="#contact" class="text-sm text-[#000] hover:underline dark:text-[#000] font-[600]">Contact</a></li>
     </ul>
 </footer>
 
