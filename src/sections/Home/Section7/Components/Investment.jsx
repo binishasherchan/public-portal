@@ -29,7 +29,9 @@ function Investment() {
     innerRadius={0.5}
     padAngle={0.7}
     cornerRadius={3}
-    arcLabel={(d) => <tspan>{total}</tspan>}
+   
+    arcLabel={(d) => <tspan style={{fontSize:"20px"}}>{(d.value/total)*100} %</tspan>}
+   
     activeOuterRadiusOffset={8}
     
     borderWidth={1}
@@ -44,7 +46,7 @@ function Investment() {
     }}
     arcLinkLabelsSkipAngle={10}
     arcLinkLabelsTextColor="#333333"
-    arcLinkLabelsThickness={2}
+  
     arcLinkLabelsColor={{ from: 'color' }}
     arcLabelsSkipAngle={10}
     arcLabelsTextColor={{
