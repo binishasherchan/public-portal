@@ -5,37 +5,38 @@ const data=[
     {
         "id": "Core Founder",
         "label": "Core Founder",
-        "value": 700,
+        "value": 2700,
         "color": "hsl(168, 70%, 50%)"
       },
       {
         "id": "NRNA & Corporate House",
         "label": "NRNA & Corporate House",
-        "value": 280,
+        "value": 1300,
         "color": "hsl(154, 70%, 50%)"
-      },
+      }
+      ,
       {
         "id": "Lawyer ",
         "label": "Lawyer ",
-        "value": 175,
+        "value": 200,
         "color": "hsl(65, 70%, 50%)"
       },
       {
         "id": "Media House",
         "label": "Media House",
-        "value": 190,
+        "value": 200,
         "color": "hsl(352, 70%, 50%)"
       },
       {
         "id": "Transportation Sector",
         "label": "Transportation Sector",
-        "value": 440,
+        "value": 200,
         "color": "hsl(33, 70%, 50%)"
       },
       {
         "id": "Corporate employee & other’s",
         "label": "Corporate employee & other’s",
-        "value": 200,
+        "value": 300,
         "color": "hsl(352, 70%, 50%)"
       },
       {
@@ -48,6 +49,7 @@ const data=[
   ]
 
 function Corporate() {
+    const total=data.reduce((init,dat)=>dat.value+init,0)
   return (
     <>
     <ResponsivePie
@@ -56,6 +58,7 @@ function Corporate() {
       innerRadius={0.5}
       padAngle={0.7}
       cornerRadius={3}
+      arcLabel={(d) => <tspan style={{fontSize:"20px"}}>{(d.value/100)} %</tspan>}
       activeOuterRadiusOffset={8}
       borderWidth={1}
       borderColor={{
@@ -134,7 +137,7 @@ function Corporate() {
           },
           {
               match: {
-                  id: 'lisp'
+                  id: 'NRNA & Corporate House'
               },
               id: 'lines'
           },

@@ -35,7 +35,7 @@ function Section7() {
  console.log(active);
   
     return <section className="" id="investment-portfolio">
-              <div className="container h-screen  pt-5 pb-5">
+              <div className="container lg:flex align-items-center h-screen  pt-5 pb-5">
                    <div>
                    <h2 className="text-[38px]  font-[600]  mt-5 mb-4 leading-9 text-center">Investment Portfolio</h2>
                 <div className="md:flex justify-center">

@@ -46,18 +46,20 @@ function Section3() {
            
      ]);
   return     <section id="projects">
-               <div class="container mx-auto lg:h-screen pt-5 pb-5">
-                 <h5 className="font-quicksand text-[16px] mt-3 font-[700]">Featured Projects</h5>
-                 <h2 className="text-[38px]  font-[600] mt-3 mb-4">What we do</h2>
-                 <div class="lg:grid lg:grid-cols-3 gap-4 ...">
-                    {projects.map((projects, index) =>(
+               <div class="container mx-auto lg:flex align-items-center lg:h-screen">
+                  <div className="">
+                    <h5 className="font-quicksand text-[16px] mt-3 font-[700]">Featured Projects</h5>
+                    <h2 className="text-[38px]  font-[600] mt-3 mb-4">What we do</h2>
+                     <div class="lg:grid lg:grid-cols-3 gap-4 ...">
+                       {projects.map((projects, index) =>(
                               <div className="md:flex md:mb-4 sm:mb-4 items-center justify-between project-card rounded " key={index}>
                                   <img src= {projects.image} alt=""  className="company-logo"/>
                                   <h2 className="text-[25px]  font-[600] mb-4 ms-3">{projects.name}</h2>
                               </div>
-                    ))}  
-                 </div>  
-             </div>      
+                        ))}  
+                     </div>  
+                  </div>  
+               </div>      
               </section>    
        
 }

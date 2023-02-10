@@ -6,17 +6,18 @@ const data=[
     {
       "id": "Corporate",
       "label": " Promoters",
-      "value": 680,
+      "value": 510,
       "color": "hsl(352, 70%, 50%)"
     },
     {
       "id": "Private Group",
       "label": "IPO",
-      "value": 700,
+      "value": 490,
       "color": "hsl(33, 70%, 50%)"
     }
   ]
 function Promoters() {
+    const total=data.reduce((init,dat)=>dat.value+init,0)
   return (
     <>
     <ResponsivePie
@@ -25,6 +26,7 @@ function Promoters() {
       innerRadius={0.5}
       padAngle={0.7}
       cornerRadius={3}
+      arcLabel={(d) => <tspan style={{fontSize:"20px"}}>{(d.value/total)*100} %</tspan>}
       activeOuterRadiusOffset={8}
       borderWidth={1}
       borderColor={{

@@ -40,11 +40,11 @@ function Section2() {
             <div class="container mx-auto xl:h-screen xl:flex pt-5">
          <div class="lg:flex align-items-center main-col">
              
-                        <div class="md:grid md:grid-cols-3 gap-4 " >
+                        <div class="lg:grid lg:grid-cols-3 gap-4 " >
                         {filteredcompany.map((filteredcompany, index) =>(
-                        <div class=" bg-[#fff] border-2 border-[#09aa4e47] text-[#000]  text-center p-3 rounded-lg row-span-2 h-80 mt-36 company-card " key={index}>
+                        <div class=" bg-[#fff] border-2 border-[#09aa4e47] text-[#000]  text-center p-3 rounded-lg row-span-2 h-80 md:h-96 mt-36 company-card " key={index}>
                                   <img src= {filteredcompany.image} alt=""  className="mx-auto company-logo"/>
-                                  <h2 className="text-[26px]  font-[600] mb-4">{filteredcompany.title}</h2>
+                                  <h2 className="text-[26px]  font-[600] mb-3">{filteredcompany.title}</h2>
                                   <p>{filteredcompany.description}</p>
                         </div>
                         ))
@@ -52,7 +52,7 @@ function Section2() {
                           {company.map((company, index) =>(
                         <div class=" bg-[#fff] border-2 border-[#09aa4e47] text-[#000]-500  text-center p-3 rounded-lg company-card" key={index}>
                                   <img src= {company.image} alt=""  className="mx-auto company-logo"/>
-                                  <h2 className="text-[26px]  font-[600] mb-4 mt-3">{company.title}</h2>
+                                  <h2 className="text-[26px]  font-[600] mb-3 mt-3">{company.title}</h2>
                                   <p> {company.description} </p>
                         </div>
                          ))

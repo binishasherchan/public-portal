@@ -61,7 +61,7 @@ function Section8() {
          </>
     case "Bandipur Cablecar":return <>
       <div class="lg:flex items-center">   
-      <h2 class="text-[32px]  font-[600] mt-3 mb-2 leading-9">Bandipur Cablecar Corporate Office</h2>               
+      <h2 class="text-[27px]  font-[600] mt-3 mb-2 leading-9">Bandipur Cablecar Corporate Office</h2>               
                          <div class="md:w-1/2">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.835616111101!2d83.98147371542294!3d28.21230100%9725245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995954eb23ff771%3A0x18dba0b1c6d00f1c!2sBandipur%20Cable%20Car%20and%20Tourism%20Limited%20Corporate%20Office!5e0!3m2!1sen!2snp!4v1675145692792!5m2!1sen!2snp"
                              width="100%" height="320" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -81,7 +81,7 @@ function Section8() {
                          </div>
         </div>
         <div class="lg:flex items-center mt-4 mb-12">
-        <h2 class="text-[32px]  font-[600] mt-3 mb-2 leading-9">Bandipur Cablecar Head office</h2>
+        <h2 class="text-[27px]  font-[600] mt-3 mb-2 leading-9">Bandipur Cablecar Head office</h2>
                      <div class="md:w-1/2 h-80 bg-gradient-to-b from-[#ffff] to-[#6ECCAF42] p-4 contact-details">
                      <div>
                              <div className="flex align-items-center mb-2">
@@ -132,10 +132,12 @@ function Section8() {
   
     return <div className="bg-gradient-to-t from-[#ffff] to-[#6ECCAF42] " id="contact">
               <div className="container lg:h-screen  pt-5 pb-5">
+                <div>
                 <h2 className="text-[38px]  font-[600]  mt-5 mb-4 leading-9">Contact Us</h2>
                 <div className="md:flex">
                   {tab.map((dat,i)=>(<div key={i} className={cx(active===dat?"active-tab":"tab-heading","")} onClick={()=>setActive(dat)}>{dat}
                 </div>))}
+                </div>
                 </div>
                 <div className="mt-4">{getActiveTab()}</div>
               </div>

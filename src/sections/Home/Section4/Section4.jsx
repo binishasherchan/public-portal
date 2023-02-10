@@ -64,7 +64,7 @@ function Section4 () {
                          <div class=" border-[#09aa4e47] text-[#000] text-lg p-3 rounded-lg event-card  hover:scale-110 transition duration-700 ease-in-out" key={index}>
                             <div className="text-center">
                                 <img src={ events.image} alt="" class="mx-auto w-100 h-40 rounded object-cover "/>
-                                <span class="post-date text-sm mt-3 text-[#382c2c]">
+                                <span class="post-date text-sm mt-4 text-[#382c2c]">
                                    {events.date}
                                 </span>
                                 <h2 class="text-[24px]  font-[600] mb-2 mt-2">{events.name}</h2>

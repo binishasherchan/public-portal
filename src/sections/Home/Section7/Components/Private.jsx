@@ -4,79 +4,79 @@ const data=[
     {
       "id": "Geographic Sector",
       "label": "Geographic Sector",
-      "value": 500,
+      "value": 1200,
       "color": "hsl(168, 70%, 50%)"
     },
     {
       "id": "Foreign Employment ",
       "label": "Foreign Employment ",
-      "value": 300,
+      "value": 500,
       "color": "hsl(154, 70%, 50%)"
     },
     {
       "id": "Co-operative",
       "label": "Co-operative",
-      "value": 175,
+      "value": 400,
       "color": "hsl(65, 70%, 50%)"
     },
     {
       "id": "Corporate",
       "label": "Corporate",
-      "value": 200,
+      "value": 500,
       "color": "hsl(352, 70%, 50%)"
     },
     {
       "id": "Nepal Government Employee",
       "label": "Nepal Government Employee",
-      "value": 440,
+      "value": 300,
       "color": "hsl(33, 70%, 50%)"
     },
     {
         "id": "Other's",
         "label": "Other's",
-        "value": 561,
+        "value": 300,
         "color": "hsl(352, 70%, 50%)"
       },
       {
         "id": "Social Organization",
         "label": "Social Organization",
-        "value": 100,
+        "value": 200,
         "color": "hsl(33, 70%, 50%)"
       },
       {
         "id": "Artist ",
         "label": "Artist ",
-        "value": 100,
+        "value": 200,
         "color": "hsl(352, 70%, 50%)"
       },
       {
         "id": "Doctor ",
         "label": "Doctor ",
-        "value": 100,
+        "value": 200,
         "color": "hsl(33, 70%, 50%)"
       },
       {
         "id": "Teacher ",
         "label": "Teacher ",
-        "value": 100,
+        "value": 200,
         "color": "hsl(352, 70%, 50%)"
       },
       {
         "id": "Army ",
         "label": "Army ",
-        "value": 100,
+        "value": 200,
         "color": "hsl(33, 70%, 50%)"
       },
       {
         "id": "Journalist ",
         "label": "Journalist ",
-        "value": 100,
+        "value": 200,
         "color": "hsl(352, 70%, 50%)"
       },
       {
         "id": "Teacher ",
         "label": "Teacher ",
-        "value": 440,
+        "value": 200,
         "color": "hsl(33, 70%, 50%)"
       },
       {
@@ -93,6 +93,7 @@ const data=[
       }
   ]
 function Private() {
+  const total=data.reduce((init,dat)=>dat.value+init,0)
   return (
     <>
   <ResponsivePie
@@ -101,6 +102,7 @@ function Private() {
     innerRadius={0.5}
     padAngle={0.7}
     cornerRadius={3}
+    arcLabel={(d) => <tspan style={{fontSize:"18px"}}>{(d.value/100)} %</tspan>}
     activeOuterRadiusOffset={8}
     borderWidth={1}
     borderColor={{
@@ -185,13 +187,13 @@ function Private() {
         },
         {
             match: {
-                id: 'elixir'
+                id: 'Nepal Police'
             },
             id: 'lines'
         },
         {
             match: {
-                id: 'javascript'
+                id: 'Corporate'
             },
             id: 'lines'
         }
