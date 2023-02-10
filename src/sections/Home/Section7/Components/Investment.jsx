@@ -18,8 +18,9 @@ const data=[
   ]
 
 function Investment() {
-// return <>apple</>
 
+    const total=data.reduce((init,dat)=>dat.value+init,0)
+ 
   return (
    <>
   <ResponsivePie
@@ -28,8 +29,7 @@ function Investment() {
     innerRadius={0.5}
     padAngle={0.7}
     cornerRadius={3}
-    // slicesLabelsTextColor="#333333"
-    sliceLabel={(d) => <tspan>aaaa</tspan>}
+    arcLabel={(d) => <tspan>{total}</tspan>}
     activeOuterRadiusOffset={8}
     
     borderWidth={1}
