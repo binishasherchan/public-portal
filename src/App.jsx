@@ -3,6 +3,7 @@ import { lazy } from "react";
 import SuspenseWrapper from "./component/SuspenseWrapper/SuspenseWrapper";
 import Navbar from "./component/Navbar/Navbar";
 import Footer from "./component/Footer/Footer";
+import ScrollArrow from "./component/GotoTop/GotoTop";
 
 
 const Home = lazy(() => import("./pages/Home"));
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <>
       <Router>
+        <ScrollArrow />
         <Navbar />
        <div>
        <Routes>
@@ -33,7 +35,7 @@ const App = () => {
           />
         </Routes>
        </div>
-       
+      
       </Router>
     </>
   );

@@ -56,7 +56,7 @@ h5{
 }
 .project-card{
   width: 100%; padding: 1.5rem;
-  background: #6ECCAF42;
+  height: 145px;
   backdrop-filter: blur(121px);
   border: 1px solid #fff;
 }
@@ -246,4 +246,51 @@ img.company-logo{
 .circle-big{
   width: 270px;
 }
+}
+img.coops-one{
+  width: 190px;
+    right: -55px;
+    bottom: 55px;
+}
+img.coops-two{
+    width: 190px;
+    left: -55px;
+    bottom: -85px;
+}
+.coops-section{
+  background-image:radial-gradient(at bottom center, #6eccaf 41%, #8758FF05 100%)
+}
+.scrollTop {
+  position: fixed; 
+  width: 40px;
+  right: -10px;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  color: #6eccaf ;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+App {
+  text-align: center;
+  height: 5000px;
 }
