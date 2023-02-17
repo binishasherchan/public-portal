@@ -60,11 +60,12 @@ function Section8() {
         </div>
          </>
     case "Bandipur Cablecar":return <>
-      <div class="lg:flex items-center">   
+         <div>
+         <div class="lg:flex items-center">   
       <h2 class="text-[27px]  font-[600] mt-3 mb-2 leading-9">Bandipur Cablecar Corporate Office</h2>               
                          <div class="md:w-1/2">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.835616111101!2d83.98147371542294!3d28.21230100%9725245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995954eb23ff771%3A0x18dba0b1c6d00f1c!2sBandipur%20Cable%20Car%20and%20Tourism%20Limited%20Corporate%20Office!5e0!3m2!1sen!2snp!4v1675145692792!5m2!1sen!2snp"
-                             width="100%" height="320" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                             width="600" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                          </div>
                          <div class="md:w-1/2 h-80 d-flex align-items-center   bg-gradient-to-b from-[#ffff] to-[#6ECCAF42] p-4 contact-details">
                              <div>
@@ -80,7 +81,7 @@ function Section8() {
                              </div>
                          </div>
         </div>
-        <div class="lg:flex items-center mt-4 mb-12">
+        <div class="lg:flex items-center mt-4 ">
         <h2 class="text-[27px]  font-[600] mt-3 mb-2 leading-9">Bandipur Cablecar Head office</h2>
                      <div class="md:w-1/2 h-80 bg-gradient-to-b from-[#ffff] to-[#6ECCAF42] p-4 contact-details">
                      <div>
@@ -88,18 +89,20 @@ function Section8() {
                                <EnvelopeIcon className="w-5 mr-3" />   <a href="mailto:info@bandipurcablecar.com.np"> <h4 class="font-quicksand text-[16px] font-[700]">info@bandipurcablecar.com.np</h4></a>
                              </div>
                              <div  className="flex align-items-center mb-2">
-                               <PhoneIcon className="w-5 mr-3" /> <a href="tel:061-541430"> <h4 class="font-quicksand text-[16px] font-[700]">061-541430</h4></a>
+                               <PhoneIcon className="w-5 mr-3" /> <a href="tel:061-541430"> <h4 class="font-quicksand text-[16px] font-[700]">065-580457</h4></a>
                              </div>
                              <div  className="flex align-items-center mb-2">
-                               <HomeIcon className="w-5 mr-3"/>  <h4 class="font-quicksand text-[16px] font-[700]">Sabhagriha Chowk, Pokhara</h4>
+                               <HomeIcon className="w-5 mr-3"/>  <h4 class="font-quicksand text-[16px] font-[700]">Thuldhunga, Bandipur Tanahun</h4>
                              </div>
                              </div>
                          </div>
                          <div class="md:w-1/2  d-flex align-items-center">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.835616111101!2d83.98147371542294!3d28.21230100%9725245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995954eb23ff771%3A0x18dba0b1c6d00f1c!2sBandipur%20Cable%20Car%20and%20Tourism%20Limited%20Corporate%20Office!5e0!3m2!1sen!2snp!4v1675145692792!5m2!1sen!2snp"
-                             width="100%" height="320" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d523.8903317278048!2d84.41277399605956!3d27.95409671330911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995055648424e65%3A0x4bf55ab8a5ee040b!2sBandipur%20Cablecar%20Buttom%20Station!5e0!3m2!1sen!2snp!4v1676357910890!5m2!1sen!2snp" 
+                           width="600" height="300" 
+                          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                          </div>
         </div>
+         </div>
         </>
     case "Biz Bazar":return <>
          <div class="md:md:flex h-full items-center">                  

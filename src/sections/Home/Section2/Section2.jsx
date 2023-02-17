@@ -37,7 +37,7 @@ function Section2() {
       } 
    ]);
   return <section className=" rounded-lg" id="about">
-            <div class="container mx-auto xl:h-screen xl:flex pt-5">
+            <div class="container mx-auto xl:flex pt-5 pb-4">
          <div class="lg:flex align-items-center main-col">
              
                         <div class="lg:grid lg:grid-cols-3 gap-4 " >

@@ -10,8 +10,8 @@ const data=[
       "color": "hsl(352, 70%, 50%)"
     },
     {
-      "id": "equity",
-      "label": "equity",
+      "id": "Equity",
+      "label": "Equity",
       "value": 300,
       "color": "hsl(33, 70%, 50%)"
     }
@@ -105,7 +105,7 @@ function Investment() {
         },
         {
             match: {
-                id: 'equity'
+                id: 'Equity'
             },
             id: 'lines'
         },

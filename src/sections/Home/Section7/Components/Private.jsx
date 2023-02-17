@@ -73,6 +73,12 @@ const data=[
         "value": 200,
         "color": "hsl(352, 70%, 50%)"
       },
+      {
+        "id": "Engineer ",
+        "label": "Engineer ",
+        "value": 200,
+        "color": "hsl(352, 70%, 50%)"
+      },
 
       {
         "id": "Labour ",
@@ -164,7 +170,7 @@ function Private() {
         },
         {
             match: {
-                id: 'python'
+                id: 'Engineer'
             },
             id: 'dots'
         },

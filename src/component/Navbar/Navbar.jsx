@@ -1,25 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useWindowSize from "../../hooks/useWindowResize";
 import logo from './../../assets/img/logo.png'
 import psms from '../../assets/img/psms.png'
+import cx from "classnames"
 
 
 
 
 function Navbar() {
   const size = useWindowSize() 
-  console.log(size)
+
+  
+  const [showScroll, setShowScroll] = useState(false)
+  
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400){
+      setShowScroll(true)
+    } else if (showScroll && window.pageYOffset <= 400){
+      setShowScroll(false)
+    }
+  };
+
+ 
+
+  window.addEventListener('scroll', checkScrollTop)
+
   return (
-    <div className="header">
+    <div className={!showScroll?"header":" fixed top-0 left-0 w-100  z-50 backdrop-blur-sm bg-white/30"}>
     
       <nav class="nav flex flex-wrap items-center justify-between px-4 container  sticky top-0 z-50">
   <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
-         <img
+        <a href="/">
+          <img
             className="h-14 w-auto" 
             src={ psms}
             alt="Your Company"
-         />
+          />
+        </a>
   </div>
 
   <input class="menu-btn hidden" type="checkbox" id="menu-btn" />

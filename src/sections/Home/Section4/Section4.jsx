@@ -12,7 +12,7 @@ function Section4 () {
             date: 'January 20, 2023',
           },
           {
-            name:'Panchase Cable Car & Tours Limited 5th AGM',
+            name:'Panchase Cable Car & Tours 5th AGM',
             image:'/panchase.jpg',
             info:'The program focused to amend provision related to preference shares of company regulations.',
             date: 'January 16, 2023',

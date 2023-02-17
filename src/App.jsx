@@ -4,6 +4,8 @@ import SuspenseWrapper from "./component/SuspenseWrapper/SuspenseWrapper";
 import Navbar from "./component/Navbar/Navbar";
 import Footer from "./component/Footer/Footer";
 import ScrollArrow from "./component/GotoTop/GotoTop";
+import Pagenotfound from "./pages/Pagenotfound";
+
 
 
 const Home = lazy(() => import("./pages/Home"));
@@ -32,6 +34,14 @@ const App = () => {
                 <About />
               </SuspenseWrapper>
             }
+          />
+          <Route 
+          path="*"
+          element={
+            <SuspenseWrapper>
+               <Pagenotfound />
+            </SuspenseWrapper>
+          }
           />
         </Routes>
        </div>

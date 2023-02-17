@@ -37,7 +37,7 @@ function Section1() {
                              </svg>
                           </div>
                           <div className="pl-3">
-                          <h5 className="text-[39px] font-[600] text-[#000] "> +5k</h5>
+                          <h5 className="text-[35px] font-[600] text-[#000] "> +5k</h5>
                            <span className="text-[18px] font-[600] text-[#fff]">Shareholders</span>
                           </div>
                         </div>
@@ -49,8 +49,8 @@ function Section1() {
                         </div>
 
                        <div className="pl-3">
-                        <h5 className="text-[39px] font-[600] text-[#000] ">3 </h5>
-                        <span className="text-[18px] font-[600] text-[#fff]">Offices</span>
+                        <h5 className="text-[35px] font-[600] text-[#000] ">5 </h5>
+                        <span className="text-[18px] font-[600] text-[#fff]">Company</span>
                        </div>
                        </div>
                     </div>
