@@ -37,12 +37,12 @@ function Section2() {
       } 
    ]);
   return <section className=" rounded-lg" id="about">
-            <div class="container mx-auto xl:flex pt-5 pb-4g">
+            <div class="container mx-auto xl:flex pt-5 pb-5">
          <div class="lg:flex align-items-center main-col">
              
                         <div class="lg:grid lg:grid-cols-3 gap-4 " >
                         {filteredcompany.map((filteredcompany, index) =>(
-                        <div class=" bg-[#fff] border-2 border-[#09aa4e47] text-[#000]  text-center p-3 rounded-lg row-span-2 h-80 md:h-96 mt-36 company-card " key={index}>
+                        <div class=" bg-[#fff] border-2 border-[#09aa4e47] text-[#000]  text-center p-3 rounded-lg row-span-2 h-80 xs:h-60 mt-36 company-card " key={index}>
                                   <img src= {filteredcompany.image} alt=""  className="mx-auto company-logo"/>
                                   <h2 className="text-[26px]  font-[600] mb-3">{filteredcompany.title}</h2>
                                   <p>{filteredcompany.description}</p>

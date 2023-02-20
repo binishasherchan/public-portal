@@ -8,7 +8,7 @@ function Section1() {
         <div class="md:flex hero-wrap">
             <div class="hero-text-wrap ">
                 <div class="hero-text-block">
-               <h2 className="text-[38px]  font-[600]  mt-3 mb-2 leading-10 "> Promoter Share Management System </h2>
+               <h2 className="text-[38px]  font-[700]  mt-3 mb-2 leading-10 "> Promoter Share Management System </h2>
                <p className="font-[500]  mt-3 mb-2"> Promoter Share Management System is an application to keep track of the ownership of the shares of the company. This system helps to keep the privacy of a shareholder within the system.</p>
                {/* <button class="bg-red-100 hover:bg-white-700 text-[#000] font-[600] py-2 px-4 mt-4 rounded flex items-center">
                  Our Company <ChevronRightIcon className="w-7"  />

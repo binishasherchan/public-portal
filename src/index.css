@@ -194,7 +194,7 @@ img.company-logo{
   background-color: rgba(255,255,255,0.6);
     backdrop-filter: blur(35.5px);
     -webkit-backdrop-filter: blur(4.5px);
-    margin-bottom: 2rem;
+    /* margin-bottom: 1rem; */
     padding: 2.5rem 2rem;
     border-radius: 0.34rem;
     box-shadow: 0px 3px 12px rgb(0 0 0 / 5%);
@@ -227,7 +227,7 @@ img.company-logo{
   position: absolute;
   left: 0; right: 0;
   top: 0; bottom: 0;
-  background-image:radial-gradient(at top right, #6eccaf 0%, #8758FF05 35%);
+  background-image: radial-gradient(at right bottom, #6eccaf 0%, #8758FF05 63%);
 }
 #events{
   background-image:radial-gradient(at bottom left, #6eccaf 0.8%, #8758FF05 100%);
